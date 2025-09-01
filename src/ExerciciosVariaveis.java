@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class ExerciciosVariaveis {
 
     public static void main(String[] args) {
+
+        System.out.println("====== Exercicio 1 ======");
+
         Pessoa pessoa = new Pessoa();
 
         pessoa.setNome("Maria");
@@ -13,14 +16,9 @@ public class ExerciciosVariaveis {
 
         System.out.println(pessoa);
 
+        System.out.println("====== Exercicio 2 ======");
+        ExercioConversao exercioConversao = new ExercioConversao(19.50);
 
-
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Digite um valor ");
-        double valor = sc.nextDouble();
-        int valorinteiro = (int) valor;
-        sc.close();
-        System.out.println("O valor inteiro do produto é: " + (int) valorinteiro);
 
 
 
