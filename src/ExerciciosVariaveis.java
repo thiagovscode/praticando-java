@@ -24,6 +24,11 @@ public class ExerciciosVariaveis {
         double media = n1.calculaMedia(7.5, 8.0, 9.0);
         System.out.println(media);
 
+
+        System.out.println("====== Exercicio 4 ======");
+        ExercicioFahrenheit f1 = new ExercicioFahrenheit();
+        double valor = f1.calculaFahrenheit(20);
+        System.out.println("A temperatura em graus Fahrenheit é:"+ valor);
     }
 
 }
