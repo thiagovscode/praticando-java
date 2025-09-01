@@ -2,7 +2,7 @@ public class Pessoa
 
 {
     private String nome;
-    private String idade;
+    private Integer idade;
     private Double altura;
     private Boolean estudante;
 
@@ -14,11 +14,11 @@ public class Pessoa
         this.nome = nome;
     }
 
-    public String getIdade() {
+    public Integer getIdade() {
         return idade;
     }
 
-    public void setIdade(String idade) {
+    public void setIdade(Integer idade) {
         this.idade = idade;
     }
 
@@ -37,4 +37,14 @@ public class Pessoa
     public void setEstudante(Boolean estudante) {
         this.estudante = estudante;
     }
+
+    @Override
+    public String toString() {
+        return
+                "  Nome='" + nome + "',\n" +
+                "  Idade=" + idade + ",\n" +
+                "  Altura=" + altura + ",\n" +
+                "  Estudante=" + estudante + "\n";
+    }
+
 }
