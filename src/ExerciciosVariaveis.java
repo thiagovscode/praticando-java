@@ -19,8 +19,10 @@ public class ExerciciosVariaveis {
         System.out.println("====== Exercicio 2 ======");
         ExercioConversao exercioConversao = new ExercioConversao(19.50);
 
-
-
+        System.out.println("====== Exercicio 3 ======");
+        ExercicioNotas n1 = new ExercicioNotas();
+        double media = n1.calculaMedia(7.5, 8.0, 9.0);
+        System.out.println(media);
 
     }
 
