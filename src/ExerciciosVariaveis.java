@@ -29,6 +29,19 @@ public class ExerciciosVariaveis {
         ExercicioFahrenheit f1 = new ExercicioFahrenheit();
         double valor = f1.calculaFahrenheit(20);
         System.out.println("A temperatura em graus Fahrenheit é:"+ valor);
+
+
+        System.out.println("====== Exercicio 5 ======");
+        ExercicioCadastroLivros l1 = new ExercicioCadastroLivros();
+        l1.setTitulo("O Pequeno Príncipe");
+        l1.setAutor("Antoine de Saint-Exupéry");
+        l1.setQtdpaginas(96);
+        l1.setPreco(39.90);
+        l1.setCategoria(Categoria.fromCodigo("F"));
+
+
+        System.out.println(l1);
+
     }
 
 }
