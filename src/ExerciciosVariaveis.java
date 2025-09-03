@@ -54,6 +54,10 @@ public class ExerciciosVariaveis {
         String numero = ExercicioParouImpar.verificaNumero(7);
         System.out.println("O número é "+ numero);
 
+        System.out.println("====== Exercicio 8 ======");
+        double BRtoUSD = ExercicioConversorMoedas.converteMoedas(451.50);
+        System.out.println("O valor em dólares é: US$ "+ BRtoUSD);
+
     }
 
 }
