@@ -48,6 +48,12 @@ public class ExerciciosVariaveis {
         String resultado = ExercicioCategoria.verificaPreco(49);
         System.out.println("Categoria do produto: " + resultado );
 
+
+        System.out.println("====== Exercicio 7 ======");
+
+        String numero = ExercicioParouImpar.verificaNumero(7);
+        System.out.println("O número é "+ numero);
+
     }
 
 }

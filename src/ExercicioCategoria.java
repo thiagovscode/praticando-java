@@ -17,18 +17,9 @@ public class ExercicioCategoria {
     public static String verificaPreco(double preco){
         String categoria;
 
-        if(preco < 50){
-            categoria = "Econômico";
-        }
-
-        else if(preco >=50 && preco<=200 ){
-            categoria= "Intermediário";
-
-        } else {
-            categoria = "Premium";
-        }
-
-        return categoria;
+        return (preco < 50) ? "Econômico"
+                : (preco <= 200) ? "Intermediário"
+                : "Premium";
 
     }
 
