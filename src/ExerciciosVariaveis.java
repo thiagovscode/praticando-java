@@ -42,6 +42,12 @@ public class ExerciciosVariaveis {
 
         System.out.println(l1);
 
+
+        System.out.println("====== Exercicio 6 ======");
+
+        String resultado = ExercicioCategoria.verificaPreco(49);
+        System.out.println("Categoria do produto: " + resultado );
+
     }
 
 }
