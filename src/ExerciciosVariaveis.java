@@ -58,6 +58,19 @@ public class ExerciciosVariaveis {
         double BRtoUSD = ExercicioConversorMoedas.converteMoedas(451.50);
         System.out.println("O valor em dólares é: US$ "+ BRtoUSD);
 
+        System.out.println("====== Exercicio 9 ======");
+        int idade = 17;
+        String mensagem;
+            if (idade >= 18) {
+                 mensagem = "Você é maior de idade.";
+            } else {
+                 mensagem = "Você é menor de idade.";
+            }
+
+            System.out.println(mensagem);
+
+
+
     }
 
 }
