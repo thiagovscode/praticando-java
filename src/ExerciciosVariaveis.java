@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class ExerciciosVariaveis {
 
     public static void main(String[] args) {
@@ -17,7 +15,7 @@ public class ExerciciosVariaveis {
         System.out.println(pessoa);
 
         System.out.println("====== Exercicio 2 ======");
-        ExercioConversao exercioConversao = new ExercioConversao(19.50);
+        ExercicioConversao exercioConversao = new ExercicioConversao(19.50);
 
         System.out.println("====== Exercicio 3 ======");
         ExercicioNotas n1 = new ExercicioNotas();
@@ -69,8 +67,17 @@ public class ExerciciosVariaveis {
 
             System.out.println(mensagem);
 
+        System.out.println("====== Exercicio 10 ======");
 
-
+        ExercicioViagem v1 = new ExercicioViagem();
+        v1.setConsumoMedio(12.5);
+        v1.setCapacidadeTanque(50);
+        v1.setCombustivelAtual(20);
+        v1.setDistanciaViagem(200);
+        v1.resumoImprimir();
+        System.out.println();
     }
+
+
 
 }
