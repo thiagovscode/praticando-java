@@ -279,11 +279,3 @@ Saída:
  Streams servem pra **filtrar, mapear e transformar listas** de forma rápida e funcional.
 
 ---
-
-## **Conclusão**
-
-> Dominar Java é sobre **entender o raciocínio**, não decorar tudo.
-> Pratique cada conceito em **mini projetos** (calculadora, agenda, lista de tarefas...).
-> Quanto mais você pratica, mais natural o código fica! 🚀
-
----
