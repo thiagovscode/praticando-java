@@ -1,3 +1,5 @@
+package variaveisetipos;
+
 public class ExerciciosVariaveis {
 
     public static void main(String[] args) {
@@ -44,7 +46,7 @@ public class ExerciciosVariaveis {
         System.out.println("====== Exercicio 6 ======");
 
         String resultado = ExercicioCategoria.verificaPreco(49);
-        System.out.println("Categoria do produto: " + resultado );
+        System.out.println("variaveisetipos.Categoria do produto: " + resultado );
 
 
         System.out.println("====== Exercicio 7 ======");

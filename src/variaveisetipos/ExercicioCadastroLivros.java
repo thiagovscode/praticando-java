@@ -1,3 +1,5 @@
+package variaveisetipos;
+
 public class ExercicioCadastroLivros {
 
     private String titulo;

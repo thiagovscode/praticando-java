@@ -1,3 +1,5 @@
+package variaveisetipos;
+
 public class ExercicioViagem {
 
     private double consumoMedio; // O carro faz 12,5 km por litro

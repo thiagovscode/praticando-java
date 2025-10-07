@@ -1,3 +1,5 @@
+package variaveisetipos;
+
 public class ExercicioConversao {
 
     private double valor;
