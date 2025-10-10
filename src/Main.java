@@ -1,5 +1,6 @@
 import colecoesestream.ExercicioColecoes;
 import heranca.Desenvolvedor;
+import heranca.Funcionario;
 import heranca.Gerente;
 
 import java.util.ArrayList;
@@ -13,12 +14,12 @@ public class Main {
 
 
 
-        Gerente gerente = new Gerente("Thiago",1500);
+        Funcionario gerente = new Gerente("Thiago",1500);
         gerente.exibirInformacoes();
         gerente.reajustarSalario(2);
-        gerente.setBonus(1000);
+        ((Gerente) gerente).setBonus(1000);
 
-        Desenvolvedor dev = new Desenvolvedor("Leonardo", 1200, "Java");
+        Funcionario dev = new Desenvolvedor("Leonardo", 1200, "Java");
         dev.exibirInformacoes();
 
     }
