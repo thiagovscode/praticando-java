@@ -1,4 +1,6 @@
 import colecoesestream.ExercicioColecoes;
+import heranca.Desenvolvedor;
+import heranca.Gerente;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,22 +12,14 @@ public class Main {
     public static void main(String[] args) {
 
 
-        ExercicioColecoes exer1 = new ExercicioColecoes();
-        exer1.getFuncionarios();
-        System.out.println(exer1.getFuncionarios());
 
-        exer1.setFuncionarios(Arrays.asList("Thiago", "Jeane", "Leonardo", "Alexandre", "Maria"));
-        System.out.println(exer1.getFuncionarios());
+        Gerente gerente = new Gerente("Thiago",1500);
+        gerente.exibirInformacoes();
+        gerente.reajustarSalario(2);
+        gerente.setBonus(1000);
 
-
-
-        List<String> funcionarios = new ArrayList<>();
-        funcionarios.add("Thiago");
-        funcionarios.add("Maria");
-        funcionarios.add("Jeane");
-
-        System.out.println(funcionarios);
-
+        Desenvolvedor dev = new Desenvolvedor("Leonardo", 1200, "Java");
+        dev.exibirInformacoes();
 
     }
 
