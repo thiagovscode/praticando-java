@@ -19,6 +19,9 @@ public class Gerente  extends Funcionario{
     }
 
 
-
-
+    @Override
+    public void exibirInformacoes() {
+        System.out.printf("Gerente: %s - Salario %.2f - bonus: %.2f",
+                nome,salario,bonus);
+    }
 }

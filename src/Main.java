@@ -15,10 +15,11 @@ public class Main {
 
 
         Funcionario gerente = new Gerente("Thiago",1500);
-        gerente.exibirInformacoes();
+
         gerente.reajustarSalario(2);
         ((Gerente) gerente).setBonus(1000);
-
+        gerente.exibirInformacoes();
+        
         Funcionario dev = new Desenvolvedor("Leonardo", 1200, "Java");
         dev.exibirInformacoes();
 
