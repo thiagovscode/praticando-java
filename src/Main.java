@@ -19,8 +19,11 @@ public class Main {
         gerente.reajustarSalario(2);
         ((Gerente) gerente).setBonus(1000);
         gerente.exibirInformacoes();
-        
+        ((Gerente) gerente).aprovarProjeto("Uso de IA nos Codigos Java");
+
         Funcionario dev = new Desenvolvedor("Leonardo", 1200, "Java");
+        dev.reajustarSalario();
+
         dev.exibirInformacoes();
 
     }

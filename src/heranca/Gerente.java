@@ -1,6 +1,6 @@
 package heranca;
 
-public class Gerente  extends Funcionario{
+public class Gerente  extends Funcionario implements Aprovador{
 
     private double bonus;
 
@@ -23,5 +23,17 @@ public class Gerente  extends Funcionario{
     public void exibirInformacoes() {
         System.out.printf("Gerente: %s - Salario %.2f - bonus: %.2f",
                 nome,salario,bonus);
+    }
+
+    @Override
+    public void calcularPLR() {
+        System.out.println("PLR do Gerente");
+    }
+
+    @Override
+    public void aprovarProjeto(String nomeProjeto) {
+
+        System.out.printf("Gerente: %s aprovou o projeto %s", nome, nomeProjeto);
+
     }
 }
