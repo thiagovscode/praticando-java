@@ -1,11 +1,5 @@
-import colecoesestream.ExercicioColecoes;
-import heranca.Desenvolvedor;
-import heranca.Funcionario;
-import heranca.Gerente;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import exercicios.sistema_escolar.Aluno;
+import exercicios.sistema_escolar.Docente;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -13,26 +7,20 @@ public class Main {
     public static void main(String[] args) {
 
 
+        Aluno aluno1 = new Aluno("Julia ", 16, 8.5);
+        Aluno aluno2 = new Aluno("Caio ", 17, 7.2);
 
-        Funcionario gerente = new Gerente("Thiago",1500);
+        aluno1.exibirDados();
+        aluno2.exibirDados();
 
-        gerente.reajustarSalario(2);
-        ((Gerente) gerente).setBonus(1000);
-        gerente.exibirInformacoes();
-        ((Gerente) gerente).aprovarProjeto("Uso de IA nos Codigos Java");
+        Docente docente1 = new Docente("Marta", 40, "Matematica");
+        Docente docente2 = new Docente("Roberto ", 38, "História");
 
-        Funcionario dev = new Desenvolvedor("Leonardo", 1200, "Java");
-        dev.reajustarSalario();
 
-        dev.exibirInformacoes();
+        docente1.exibirDados();
+        docente2.exibirDados();
 
     }
-
-
-
-
-
-
 
 
 }
