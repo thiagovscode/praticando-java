@@ -1,21 +1,17 @@
-import exercicios.gerenciamento_de_biblioteca.Ebook;
-import exercicios.gerenciamento_de_biblioteca.Livro;
-import exercicios.gerenciamento_de_biblioteca.Revista;
+import exercicios.notificacao.Email;
+import exercicios.notificacao.Push;
+import exercicios.notificacao.Sms;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
+    Email email = new Email("cliente@exemplo.com","Promoção especial!  ","Aproveite nossos descontos esta semana.  ");
+    Sms sms = new Sms("(11) 98765-4321","Sua fatura foi paga com sucesso." );
+    Push push = new Push("usuario_app","Você tem uma nova mensagem não lida.  ","Novidade!");
 
-        Livro livro = new Livro("O Guia do Mochileiro das Galáxias", 1979, "Douglas Adams");
-        Revista revista = new Revista("National Geographic", 2023, 245);
-        Ebook ebook = new Ebook("Clean Code", 2008, "PDF");
-
-
-        livro.exibirInfo();
-        revista.exibirInfo();
-        ebook.exibirInfo();
+    email.enviar();
+    sms.enviar();
+    push.enviar();
 
     }
 
