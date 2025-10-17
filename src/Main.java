@@ -1,17 +1,13 @@
-import exercicios.controle_de_reservas.Reserva;
-import exercicios.controle_de_reservas.ReversaVip;
-import exercicios.enviando_mensagens.Mensagem;
+import exercicios.imprimir.Relatorio;
 
 public class Main {
     public static void main(String[] args) {
 
-        Reserva r = new Reserva();
-        r.reservar();
-        r.reservar("10/04");
-        r.reservar("12/04", 4);
-
-        Reserva vip = new ReversaVip();
-        vip.reservar();
+        Relatorio rel = new Relatorio(
+                "Relatório 2025",
+                "Tudo funcionando conforme esperado."
+        );
+        rel.imprimir();
     }
 
 
