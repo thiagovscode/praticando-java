@@ -1,18 +1,19 @@
-import exercicios.notificacao.Email;
-import exercicios.notificacao.Push;
-import exercicios.notificacao.Sms;
+import exercicios.sistema_de_pamentos.Boleto;
+import exercicios.sistema_de_pamentos.Cartao;
+import exercicios.sistema_de_pamentos.Pagamento;
+import exercicios.sistema_de_pamentos.Pix;
 
 public class Main {
     public static void main(String[] args) {
 
-    Email email = new Email("cliente@exemplo.com","Promoção especial!  ","Aproveite nossos descontos esta semana.  ");
-    Sms sms = new Sms("(11) 98765-4321","Sua fatura foi paga com sucesso." );
-    Push push = new Push("usuario_app","Você tem uma nova mensagem não lida.  ","Novidade!");
 
-    email.enviar();
-    sms.enviar();
-    push.enviar();
+        Pagamento cartao = new Cartao(250.00);
+        Pagamento boleto = new Boleto(500.00);
+        Pagamento pix = new Pix(300.00);
 
+        cartao.confirmarPagamento();
+        boleto.confirmarPagamento();
+        pix.confirmarPagamento();
     }
 
 
